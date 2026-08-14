@@ -92,13 +92,7 @@ The correct answer is:
 
 **a. Yes, unquestionably. Constant vigilance!**
 
-The word is already hidden in the question:
-
-**f a c e t i o u s l y**
-
-It contains **a, e, i, o, u, y**, in exactly that order.
-
-"Facetiously" is therefore both the manner in which the question is asked and the answer to the question.
+The word is `facetiously`.
 
 ## Exercise 4
 
@@ -129,7 +123,7 @@ $$
 =\frac{kn(n-1)}{2}+n.
 $$
 
-## 6.a
+### 6.a
 
 Taking $k=2$:
 
@@ -149,7 +143,7 @@ This produces the square numbers $0,1,4,9,16,\ldots$.
 
 [OEIS A000290](https://oeis.org/A000290)
 
-## 6.b
+### 6.b
 
 Taking $k=3$:
 
@@ -169,7 +163,7 @@ These are the pentagonal numbers $0,1,5,12,22,\ldots$.
 
 [OEIS A000326](https://oeis.org/A000326)
 
-## 6.c
+### 6.c
 
 Taking $k=4$:
 
@@ -189,7 +183,7 @@ These are the hexagonal numbers $0,1,6,15,28,\ldots$.
 
 [OEIS A000384](https://oeis.org/A000384)
 
-## 6.d
+### 6.d
 
 Since
 
@@ -216,19 +210,7 @@ These are the triangular numbers $0,1,3,6,10,\ldots$.
 
 ## Exercise 7
 
-Each summation counts the number of nondecreasing integer sequences
-
-$$
-0 \le i_1 \le i_2 \le \cdots \le i_N \le x.
-$$
-
-The number of such sequences is the multiset coefficient
-
-$$
-\boxed{\binom{x+N}{N}=\binom{x+N}{x}}.
-$$
-
-## 7.a
+### 7.a
 
 The result is
 
@@ -236,7 +218,7 @@ $$
 \boxed{1}.
 $$
 
-## 7.b
+### 7.b
 
 There are $x+1$ terms:
 
@@ -251,7 +233,7 @@ $$
 \boxed{x+1}.
 $$
 
-## 7.c
+### 7.c
 
 $$
 \begin{aligned}
@@ -268,7 +250,7 @@ $$
 \boxed{\frac{(x+1)(x+2)}{2}=\binom{x+2}{2}}.
 $$
 
-## 7.d
+### 7.d
 
 The result is
 
@@ -277,7 +259,7 @@ $$
 =\boxed{\frac{(x+1)(x+2)(x+3)}{6}}.
 $$
 
-## 7.e
+### 7.e
 
 The result is
 
@@ -286,7 +268,7 @@ $$
 =\boxed{\frac{(x+1)(x+2)(x+3)(x+4)}{24}}.
 $$
 
-## 7.f
+### 7.f
 
 See function `ex7f` in `week-1.py`
 
