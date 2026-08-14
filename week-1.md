@@ -270,15 +270,31 @@ $$
 
 ### 7.f
 
-See function `ex7f` in `week-1.py`
+See function `ex7f` in `week-1.py`.
+
+## Exercise 8
+
+See function `ex8` in `week-1.py`.
+
+## Exercise 9
+
+See function `ex9` in `week-1.py`.
 
 ## Exercise 10
+
+See function `ex10` in `week-1.py`.
+
+It is the factorial function
 
 $$
 f(N) = (N + 1)!
 $$
 
 ## Exercise 11
+
+See function `ex11` in `week-1.py`.
+
+It is the factorial function
 
 $$
 f(N) = (N + 1)!
