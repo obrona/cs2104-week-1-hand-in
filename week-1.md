@@ -185,24 +185,17 @@ These are the hexagonal numbers $0,1,6,15,28,\ldots$.
 
 ### 6.d
 
-Since
+The expression is:
 
-$$
-\left\lfloor\frac{i}{1}\right\rfloor=i,
-$$
+$$\sum_{i=0}^{1 \cdot n} \left\lfloor \frac{i}{1} \right\rfloor$$
 
-the expression simplifies to
+So the sum becomes:
 
-$$
-\sum_{i=0}^{n}i
-=\frac{n(n+1)}{2}.
-$$
+$$\sum_{i=0}^{i} i = \frac{n(n + 1)}{2}$$
 
-Result:
+## Result
 
-$$
-\boxed{\frac{n(n+1)}{2}}
-$$
+$$\boxed{n(n+1)}$$
 
 These are the triangular numbers $0,1,3,6,10,\ldots$.
 
