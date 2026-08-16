@@ -15,27 +15,51 @@ test_identity_func()
 def sigma1(f: Callable[[int], int], n: int) -> int:
     return 0 if n < 1 else sum(f(i) for i in range(1, n + 1))
 
+print('ex6a', [sigma0(lambda x: x // 2, 2 * i) for i in range(10)])
+print('ex6b', [sigma0(lambda x: x // 3, 3 * i) for i in range(10)])
+print('ex6c', [sigma0(lambda x: x // 4, 4 * i) for i in range(10)])
+
 def ex7f(N: int, x: int) -> int:
     if N == 0:
         return 1
     else:
-        return sum(ex7f(N - 1, i) for i in range(0, x + 1))
+        return sum(ex7f(N - 1, i) for i in range(x + 1))
 
-def ex8(N: int, x: int) -> int:
+print('ex7f', [ex7f(5, i) for i in range(10)])
+
+def ex8(N: int) -> int:
     if N == 0:
         return 1
-    return sum(ex8(N - 1, i + 1) for i in range(0, x + 1))
 
-def ex9(N: int, x: int) -> int:
+    def helper(x: int, lvl: int) -> int:
+        if lvl == 0:
+            return 1
+        return sum(helper(i, lvl - 1) for i in range(x + 2))
+
+    return helper(0, N - 1)
+
+print('ex8', [ex8(i) for i in range(10)])
+
+def ex9(N: int) -> int:
     if N == 0:
         return 1
-    return sum(ex9(N - 1, 1 - i) for i in range(0, x + 1))
+
+    def helper(x: int, lvl: int) -> int:
+        if lvl == 0:
+            return 1
+        return sum(helper(i, lvl - 1) for i in range(1 - x + 1) if i >= 0)
+
+    return helper(0, N - 1)
+
+print('ex9', [ex9(i) for i in range(10)])
 
 def ex10(N: int) -> int:
     if N == 0:
         return 1
     else:
         return (N + 1) * ex10(N - 1)
+
+print('ex10', [ex10(i) for i in range(10)])
 
 def ex11(N: int) -> int:
     def helper(i: int) -> int:
@@ -45,4 +69,4 @@ def ex11(N: int) -> int:
             return (i + 1) * helper(i + 1)
     return helper(0)
 
-#print(ex10(2))
+print('ex11', [ex11(i) for i in range(10)])

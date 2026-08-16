@@ -205,25 +205,17 @@ These are the triangular numbers $0,1,3,6,10,\ldots$.
 
 ### 7.a
 
-The result is
+The ans is
 
 $$
-\boxed{1}.
+1
 $$
 
 ### 7.b
 
-There are $x+1$ terms:
-
 $$
 \sum_{i_1=0}^{x}1
 =x+1.
-$$
-
-Therefore,
-
-$$
-\boxed{x+1}.
 $$
 
 ### 7.c
@@ -237,19 +229,13 @@ $$
 \end{aligned}
 $$
 
-Therefore,
-
-$$
-\boxed{\frac{(x+1)(x+2)}{2}=\binom{x+2}{2}}.
-$$
-
 ### 7.d
 
 The result is
 
 $$
-\boxed{\binom{x+3}{3}}
-=\boxed{\frac{(x+1)(x+2)(x+3)}{6}}.
+\binom{x+3}{3}
+=\frac{(x+1)(x+2)(x+3)}{6}.
 $$
 
 ### 7.e
@@ -257,21 +243,40 @@ $$
 The result is
 
 $$
-\boxed{\binom{x+4}{4}}
-=\boxed{\frac{(x+1)(x+2)(x+3)(x+4)}{24}}.
+\binom{x+4}{4}
+=\frac{(x+1)(x+2)(x+3)(x+4)}{24}.
 $$
 
 ### 7.f
 
 See function `ex7f` in `week-1.py`.
 
+The formula is 
+
+$$
+\binom{x + N}{N}
+$$
+
 ## Exercise 8
 
 See function `ex8` in `week-1.py`.
 
+It is the Catalan numbers
+
+$$
+f(N) = \frac{1}{n + 1} \cdot \binom{2n}{n}
+$$
+
 ## Exercise 9
 
 See function `ex9` in `week-1.py`.
+
+It is the Fibonacci numbers
+
+$$
+f(N) = f(N - 1) + f(N - 2) \\
+f(0) = f(1) = 1
+$$
 
 ## Exercise 10
 
